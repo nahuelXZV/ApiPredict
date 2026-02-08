@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from app.schemas.prediction_input import ClienteDTO
-from app.services.prediction_service import PredictionService
+from app.services.predictionService import PredictionService
 
 router = APIRouter()
 service = PredictionService()

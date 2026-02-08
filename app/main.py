@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.api import trainController
 from app.api import pedidoController
+from app.api import statisticsController
 
 
 def create_app() -> FastAPI:
@@ -13,6 +14,7 @@ def create_app() -> FastAPI:
     # Routers
     app.include_router(trainController.router, prefix="/api", tags=["Training"])
     app.include_router(pedidoController.router,prefix="/api",tags=["Predicciones"])
+    app.include_router(statisticsController.router,prefix="/api",tags=["Estadísticas"])
     
     # Eventos
     @app.on_event("startup")

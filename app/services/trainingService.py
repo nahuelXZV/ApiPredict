@@ -67,7 +67,7 @@ class TrainingService:
         model = Pipeline([
             ("prep", preprocess),
             ("knn", NearestNeighbors(
-                n_neighbors=20,
+                n_neighbors=29,
                 metric="cosine"
             ))
         ])

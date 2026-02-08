@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.services.training_service import TrainingService
+from app.services.trainingService import TrainingService
 
 router = APIRouter()
 service = TrainingService()
